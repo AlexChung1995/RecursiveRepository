@@ -59,7 +59,11 @@ def callback():
 @app.route('/copy')
 def copy():
     if 'access_token' in session:
-        
+        r = requests_client.post('https://api.github.com/repos/octocat/Hello-World/forks',
+                             params = {
+                                 'access_token': session['access_token']
+                             })
+        return str(r.text) + str(r.status_code) + str(r.url)
     else:
         welcome()
 

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1b512d-695f-494b-8f96-c2105c01aebc" name="Default" comment="" />
+    <list default="true" id="af1b512d-695f-494b-8f96-c2105c01aebc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/self_replicating/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_replicating/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_replicating/templates/github_auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/self_replicating/templates/github_auth.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +17,8 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_replicating/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+            <state relative-caret-position="525">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
               </folding>
@@ -23,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ready_to_fork.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ready_to_fork.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_replicating/templates/ready_to_fork.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -59,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="github_auth.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="github_auth.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/self_replicating/templates/github_auth.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="11" column="96" lean-forward="true" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+              <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -78,16 +81,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/self_replicating/html/welcome.html" />
         <option value="$PROJECT_DIR$/self_replicating/run.sh" />
         <option value="$PROJECT_DIR$/self_replicating/templates/welcome.html" />
-        <option value="$PROJECT_DIR$/self_replicating/templates/github_auth.html" />
         <option value="$PROJECT_DIR$/self_replicating/secrets.ini" />
-        <option value="$PROJECT_DIR$/self_replicating/server.py" />
         <option value="$PROJECT_DIR$/self_replicating/templates/ready_to_fork.html" />
+        <option value="$PROJECT_DIR$/self_replicating/server.py" />
+        <option value="$PROJECT_DIR$/self_replicating/templates/github_auth.html" />
       </list>
     </option>
   </component>
@@ -95,6 +101,7 @@
     <option name="width" value="2560" />
     <option name="height" value="1440" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -168,7 +175,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -219,6 +226,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/self_replicating/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_replicating/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/self_replicating/secrets.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -233,34 +257,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_replicating/server.py">
+    <entry file="file://$PROJECT_DIR$/self_replicating/templates/ready_to_fork.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/self_replicating/templates/github_auth.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="11" column="96" lean-forward="true" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_replicating/templates/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_replicating/templates/ready_to_fork.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
         </state>
       </provider>
     </entry>
