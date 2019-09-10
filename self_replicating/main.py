@@ -1,4 +1,4 @@
-from flask import Flask, url_for, escape, render_template, request, session
+from flask import Flask, url_for, escape, render_template, request, session, redirect
 import configparser
 import requests as requests_client
 import json
@@ -50,12 +50,10 @@ def copy():
             html_url = jsoned_r['html_url']
             return render_template('successful_fork.html', html_url = html_url)
         else:
-            print("need to redirect, fork unsuccessful")
-            return "need to redirect, fork unsuccessful " + str(r.status_code) + " \n " + str(r.text)
+            return redirect(url_for("failure"))
     else:
-        print("need to redirect")
-        return "need to redirect, no access_token in session"
+        return redirect(url_for("failure"))
 
 @app.route('/failure')
 def failure_redirect():
-    return "click here to go to the start"
+    return render_template('failure.html')
