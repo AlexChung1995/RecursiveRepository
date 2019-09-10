@@ -17,12 +17,13 @@ https://github.com/AlexChung1995/RecursiveRepository.git onto your authenticated
 ### 1.) Install Google Cloud SDK and add it to your path
 
 - follow the instructions here: https://cloud.google.com/sdk/docs/
-- add it to your path with "./google-cloud-sdk/install.sh"
+- add the gcloud bash command to your path by going to the directory where you downloaded the sdk to
+    - then, write "./google-cloud-sdk/install.sh" in your terminal
 
 
 ### 2.) Create a new Google Cloud App project
 
-- create a new project with this command "gcloud projects create [YOUR_PROJECT_ID] --set-as-default"
+- create a new project with this terminal command "gcloud projects create [YOUR_PROJECT_ID] --set-as-default"
     - I called my project "recursive-repo" so my command was "gcloud projects create recursive-repo --set-as-default"
 - verify your project was created with "gcloud projects describe [YOUR_PROJECT_ID]"
     - my command was "gcloud projects describe recursive-repo"
@@ -30,12 +31,12 @@ https://github.com/AlexChung1995/RecursiveRepository.git onto your authenticated
     - my command was "gcloud app create --project=recursive-repo"
     - you will also have to choose which region you want your cloud app deployed on, so follow the command prompt instructions after you run this command
 - install the gcloud python app engine "gcloud components install app-engine-python"
+- more detailed instructions are here: https://cloud.google.com/appengine/docs/standard/python3/quickstart
 
 
 ### 3.) Enable Billing for your Google Cloud app
 
 - you will have to enable billing at the address here: https://console.cloud.google.com/projectselector/billing?lang=python3&st=true&_ga=2.220467096.-1609744369.1567999366
-- more detailed instructions are here: https://cloud.google.com/appengine/docs/standard/python3/quickstart
 - you will get 300$ in free credit so this app will not charge you
 - you can avoid incurring charges by deleting the project afterwards if you wish
 
