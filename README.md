@@ -1,15 +1,13 @@
-To deploy and use RecursiveRepository
-
-0.) Install python
+#To deploy and use RecursiveRepository
 
 
-1.) Install Google Cloud SDK and add it to your path
+### 1.) Install Google Cloud SDK and add it to your path
 
 - follow the instructions here: https://cloud.google.com/sdk/docs/
 - add it to your path with "./google-cloud-sdk/install.sh"
 
 
-2.) Create a new Google Cloud App project
+### 2.) Create a new Google Cloud App project
 
 - create a new project with this command "gcloud projects create [YOUR_PROJECT_ID] --set-as-default"
     - I called my project "recursive-repo" so my command was "gcloud projects create recursive-repo --set-as-default"
@@ -21,7 +19,7 @@ To deploy and use RecursiveRepository
 - install the gcloud python app engine "gcloud components install app-engine-python"
 
 
-3.) Enable Billing for your Google Cloud app
+### 3.) Enable Billing for your Google Cloud app
 
 - you will have to enable billing at the address here: https://console.cloud.google.com/projectselector/billing?lang=python3&st=true&_ga=2.220467096.-1609744369.1567999366
 - more detailed instructions are here: https://cloud.google.com/appengine/docs/standard/python3/quickstart
@@ -29,13 +27,13 @@ To deploy and use RecursiveRepository
 - you can avoid incurring charges by deleting the project if you wish
 
 
-4.) Clone the RecursiveRepo project so you have it locally
+### 4.) Clone the RecursiveRepository project so you have it locally
 
-- If you have already used the RecursiveRepo web application, you can clone from your Github user account
+- If you have already used the RecursiveRepository web application, you can clone from your Github user account
 - If not, write "git clone https://github.com/AlexChung1995/RecursiveRepository.git" in your terminal
 
 
-5.) Register your GitHub App
+### 5.) Register your GitHub App
 
 - For this app to access Github User profiles, it must be registered with Github
 - When the app is deployed on Google Cloud it will be accessible at http://YOUR_PROJECT_ID.appspot.com
@@ -48,23 +46,23 @@ To deploy and use RecursiveRepository
         - i set my Authorization Callback URL to http://recursive-repo.appspot.com/callback
 
 
-6.) Put client ID and client Secret into a secrets file
+### 6.) Put client ID and client Secret into a secrets file
 
 - Once you have registered a new app with Github, you will be given a client ID and client Secret credentials
-- in the RecursiveRepo project directory that you cloned earlier, in /self_replicating create a text file called secrets.ini
+- in the RecursiveRepository project directory that you cloned earlier, in /self_replicating create a text file called secrets.ini
 
 - secrets.ini should look like
 
 
     [GITHUB]
-    client_ID = <the client ID provided by GitHub> 
-    client_Secret = <the client secret provided by GitHub>
+    client_ID = \<the client ID provided by GitHub\>
+    client_Secret = \<the client secret provided by GitHub\>
     
 - i have included an example .ini file called example.ini, you may change the values within and rename it to "secrets.ini"
 
 
-7.) Deploy on Google cloud
+### 7.) Deploy on Google cloud
 
-- go to your terminal and navigate to your RecursiveRepo/self_replicating directory
+- go to your terminal and navigate to your RecursiveRepository/self_replicating directory
 - write "gcloud app deploy"
 - the web app will now be available at http://YOUR_PROJECT_ID.appspot.com
