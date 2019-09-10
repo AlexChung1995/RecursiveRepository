@@ -44,7 +44,7 @@ def callback():
 @app.route('/copy')
 def copy():
     if 'access_token' in session:
-        r = requests_client.post('https://api.github.com/repos/AlexChung1995/RecursiveRepo/forks',
+        r = requests_client.post('https://api.github.com/repos/AlexChung1995/RecursiveRepository/forks',
                              params = {
                                  'access_token': session['access_token']
                              })
@@ -52,13 +52,13 @@ def copy():
         if int(r.status_code) <= 202:
             jsoned_r = json.loads(r.text)
             html_url = jsoned_r['html_url']
-            return render_template('succesful_fork.html', html_url = html_url)
+            return render_template('successful_fork.html', html_url = html_url)
         else:
-            print("need to redirect")
-            return "need to redirect"
+            print("need to redirect, fork unsuccessful")
+            return "need to redirect, fork unsuccessful " + str(r.status_code) + " \n " + str(r.text)
     else:
         print("need to redirect")
-        return "need to redirect"
+        return "need to redirect, no access_token in session"
 
 @app.route('/failure')
 def failure_redirect():
