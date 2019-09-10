@@ -11,24 +11,6 @@ cfparser.read('secrets.ini')
 client_ID = cfparser['GITHUB']['client_ID']
 client_Secret = cfparser['GITHUB']['client_Secret']
 
-"""
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
-
-@app.route('/username', methods = ['GET', 'POST'])
-def username():
-    if request.method == 'POST':
-        print(str(request.form))
-        username = request.form['username']
-        return str(request.form['username'])
-    else:
-        return "Please input a valid username"
-
-@app.route('/welcome')
-def welcome():
-    return render_template('welcome.html')
-"""
 
 @app.route('/')
 def github_auth():
@@ -62,7 +44,7 @@ def callback():
 @app.route('/copy')
 def copy():
     if 'access_token' in session:
-        r = requests_client.post('https://api.github.com/repos/octocat/Hello-World/forks',
+        r = requests_client.post('https://api.github.com/repos/AlexChung1995/RecursiveRepo/forks',
                              params = {
                                  'access_token': session['access_token']
                              })
@@ -77,13 +59,7 @@ def copy():
     else:
         print("need to redirect")
         return "need to redirect"
-        #github_auth()
 
 @app.route('/failure')
 def failure_redirect():
     return "click here to go to the start"
-
-
-#with app.app_context(), app.test_request_context():
-#    url = url_for('static', filename = 'welcome.html')
-#    print(url)
