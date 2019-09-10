@@ -1,4 +1,4 @@
-#To deploy and use RecursiveRepository
+# To deploy and use RecursiveRepository
 
 
 ### 1.) Install Google Cloud SDK and add it to your path
@@ -53,11 +53,12 @@
 
 - secrets.ini should look like
 
-
+'''
     [GITHUB]
     client_ID = \<the client ID provided by GitHub\>
     client_Secret = \<the client secret provided by GitHub\>
-    
+'''
+
 - i have included an example .ini file called example.ini, you may change the values within and rename it to "secrets.ini"
 
 
